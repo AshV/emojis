@@ -66,7 +66,7 @@ var ASCII =
 
 
 
-fetch("/src/list.json")
+fetch("https://raw.githubusercontent.com/AshV/emojis/main/src/list.json")
     .then(response => response.text())
     .then(data => {
         loadData(JSON.parse(data));
